@@ -9,11 +9,14 @@ function guardarPost(e){
         titulo,
         contenido
     };
-    //localStorage.setItem('notas',JSON.stringify(objNota));
+    //localStorage.setItem('notas',JSON.stringify(objNota));titulo==="" &&
     if(titulo===""){
       alert("No es posible ingresar un post sin titulo");
       return;
-  }else if(localStorage.getItem('posts')=== null){
+    }if(titulo.length>=50){
+      alert("el titulo debe tener menos de 50 caracteres");
+      return;
+    }else if(localStorage.getItem('posts')=== null){
         
         let posts=[];
         posts.push(objPost);
