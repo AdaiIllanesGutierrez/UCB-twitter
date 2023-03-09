@@ -1,4 +1,4 @@
-<html>
+<!-- <html>
   <body>
     <h1>Sumador</h1>
     <form id="sumar-form">
@@ -12,4 +12,32 @@
 
     <script type="module" src="./src/presenter.js"></script>
   </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UCB TWITTER</title>
+</head>
+<body>
+  <h2>CREAR POST</h2>
+    <form id="form_Post">
+      <div id="formTitulo">
+        <input type="text" id="titulo" placeholder=" TITULO ">
+      </div>
+      <br>
+      <div id="formContenido">
+        <textarea id="contenido" placeholder="CONTENIDO">
+      </div>
+      <div class="container">
+        <button type="submit" class="btn" >publicar</button>
+      </div>
+    </form>
+
+  <h2>Publicaciones</h2>
+    <div id="publicaciones"></div>
+  <script type="module" src="./src/presenter.js"></script>
+</body>
 </html>
