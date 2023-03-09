@@ -14,7 +14,7 @@ function guardarPost(e){
       alert("No es posible ingresar un post sin titulo");
       return;
     }if(titulo.length>=50){
-      alert("el titulo debe tener menos de 50 caracteres");
+      alert("excedio el numero de caracteres");
       return;
     }else if(localStorage.getItem('posts')=== null){
         
