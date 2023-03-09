@@ -10,8 +10,10 @@ function guardarPost(e){
         contenido
     };
     //localStorage.setItem('notas',JSON.stringify(objNota));
-    
-    if(localStorage.getItem('posts')=== null){
+    if(titulo===""){
+      alert("No es posible ingresar un post sin titulo");
+      return;
+  }else if(localStorage.getItem('posts')=== null){
         
         let posts=[];
         posts.push(objPost);
